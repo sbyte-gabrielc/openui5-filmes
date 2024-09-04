@@ -31,9 +31,9 @@
                                 <cells>
                                     <Image src="https://image.tmdb.org/t/p/w500{Populares>poster_path}" width="50%"/>
                                         <Text text="{Populares>title}"/>
-                                            <Text text="{path:'Populares>release_date', type: 'sap.ui.model.type.DateTime', formatOptions:{source:{pattern:'yyyy-MM-dd'},pattern: 'dd/MM/yyyy'}}" />
-                                            <Text text="{Populares>vote_average} &#9733;" />
-                                            <Text text="{Populares>overview}" textAlign="Center"/>
+                                        <Text text="{path:'Populares>release_date'}" />
+                                        <Text text="{Populares>vote_average} &#9733;" />
+                                        <Text text="{Populares>overview}" textAlign="Center"/>
                                 </cells>
                             </ColumnListItem>
                         </items>
