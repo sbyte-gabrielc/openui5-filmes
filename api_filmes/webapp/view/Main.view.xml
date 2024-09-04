@@ -7,7 +7,7 @@
             <items>
                 <IconTabFilter text="Populares" icon="sap-icon://sap-icon://trend-up" key="populares">
                     <!-- Tabela -->
-                    <Table items="">
+                    <Table items="{Populares>/results}">
                         <columns>
                             <Column>
                                 <Text text="Capa"></Text>
@@ -29,19 +29,19 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Image src="" width="50%"/>
-                                    <Text text=""/>
-                                    <Text text="" />
-                                    <Text text="" />
-                                    <Text text="" textAlign="Center"/>
+                                    <Image src="https://image.tmdb.org/t/p/w500{Populares>poster_path}" width="50%"/>
+                                        <Text text="{Populares>title}"/>
+                                            <Text text="{path:'Populares>release_date', type: 'sap.ui.model.type.DateTime', formatOptions:{source:{pattern:'yyyy-MM-dd'},pattern: 'dd/MM/yyyy'}}" />
+                                            <Text text="{Populares>vote_average} &#9733;" />
+                                            <Text text="{Populares>overview}" textAlign="Center"/>
                                 </cells>
                             </ColumnListItem>
                         </items>
                     </Table>
                 </IconTabFilter>
 
-                <IconTabFilter text="Avaliados" icon="sap-icon://favorite" key="avaliados">
-                    <Table items="">
+                <IconTabFilter text="Avaliados" icon="sap-icon://favorite" key="avaliados" id="itf1">
+                    <Table items="{Avaliados>/results}">
                         <columns>
                             <Column>
                                 <Text text="Capa"></Text>
@@ -63,18 +63,18 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Image src="" width="50%"/>
-                                    <Text text=""/>
-                                    <Text text=""/>
-                                    <Text text=""/>
-                                    <Text text="" textAlign="Center"/>
+                                    <Image src="https://image.tmdb.org/t/p/w500{Avaliados>poster_path}" width="50%"/>
+                                        <Text text="{Avaliados>title}"/>
+                                        <Text text="{path:'Avaliados>release_date', type: 'sap.ui.model.type.DateTime', formatOptions:{source:{pattern:'yyyy-MM-dd'},pattern: 'dd/MM/yyyy'}}" />
+                                        <Text text="{Avaliados>vote_average} &#9733;" />
+                                        <Text text="{Avaliados>overview}" textAlign="Center"/>
                                 </cells>
                             </ColumnListItem>
                         </items>
                     </Table>
                 </IconTabFilter>
-                <IconTabFilter text="Em breve" icon="sap-icon://future" key="emcartaz">
-                    <Table items="">
+                <IconTabFilter text="Em breve" icon="sap-icon://future" key="emcartaz" id="itf2">
+                    <Table items="{Breve>/results}">
                         <columns>
                             <Column>
                                 <Text text="Capa"></Text>
@@ -96,11 +96,11 @@
                         <items>
                             <ColumnListItem>
                                 <cells>
-                                    <Image src="" width="50%"/>
-                                    <Text text=""/>
-                                    <Text text=""/>
-                                    <Text text=""/>
-                                    <Text text="" textAlign="Center"/>
+                                    <Image src="https://image.tmdb.org/t/p/w500{Breve>poster_path}" width="50%"/>
+                                        <Text text="{Breve>title}"/>
+                                        <Text text="{path:'Breve>release_date', type: 'sap.ui.model.type.DateTime', formatOptions:{source:{pattern:'yyyy-MM-dd'},pattern: 'dd/MM/yyyy'}}" />
+                                        <Text text="{Breve>vote_average} &#9733;" />
+                                        <Text text="{Breve>overview}" textAlign="Center"/>
                                 </cells>
                             </ColumnListItem>
                         </items>
