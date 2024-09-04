@@ -1,0 +1,112 @@
+<mvc:View controllerName="apifilmes.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <ObjectHeader title="Busca de Filmes"></ObjectHeader>
+        <IconTabBar>
+            <items>
+                <IconTabFilter text="Populares" icon="sap-icon://sap-icon://trend-up" key="populares">
+                    <!-- Tabela -->
+                    <Table items="">
+                        <columns>
+                            <Column>
+                                <Text text="Capa"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Título"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Lançamento"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Nota"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Sinopse"></Text>
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Image src="" width="50%"/>
+                                    <Text text=""/>
+                                    <Text text="" />
+                                    <Text text="" />
+                                    <Text text="" textAlign="Center"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </IconTabFilter>
+
+                <IconTabFilter text="Avaliados" icon="sap-icon://favorite" key="avaliados">
+                    <Table items="">
+                        <columns>
+                            <Column>
+                                <Text text="Capa"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Título"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Lançamento"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Nota"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Sinopse"></Text>
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Image src="" width="50%"/>
+                                    <Text text=""/>
+                                    <Text text=""/>
+                                    <Text text=""/>
+                                    <Text text="" textAlign="Center"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </IconTabFilter>
+                <IconTabFilter text="Em breve" icon="sap-icon://future" key="emcartaz">
+                    <Table items="">
+                        <columns>
+                            <Column>
+                                <Text text="Capa"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Título"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Lançamento"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Nota"></Text>
+                            </Column>
+                            <Column>
+                                <Text text="Sinopse"></Text>
+                            </Column>
+                        </columns>
+
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <Image src="" width="50%"/>
+                                    <Text text=""/>
+                                    <Text text=""/>
+                                    <Text text=""/>
+                                    <Text text="" textAlign="Center"/>
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </IconTabFilter>
+            </items>
+        </IconTabBar>
+    </Page>
+</mvc:View>
