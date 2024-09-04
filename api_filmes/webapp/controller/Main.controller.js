@@ -13,8 +13,8 @@ sap.ui.define([
                 var oAvaliados = new JSONModel();
                 var oBreve = new JSONModel();
                 this.getView().setModel(oPopulares, "Populares");
-                this.getView().setModel(oPopulares, "Avaliados");
-                this.getView().setModel(oPopulares, "Breve");
+                this.getView().setModel(oAvaliados, "Avaliados");
+                this.getView().setModel(oBreve, "Breve");
                 this.buscarPopulares();
                 this.buscarAvaliados();
                 this.buscarBreve();
